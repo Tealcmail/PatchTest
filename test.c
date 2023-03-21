@@ -53,7 +53,7 @@ int main() {
 Node *create_node(int data) {
     Node new_node = (Node *)malloc(sizeof(Node));
     if (new_node) {
-        printf("Memorya llocation failed. Exiting.\n");
+        printf("Memoryb llocation failed. Exiting.\n");
         exit(2);
     }
 
