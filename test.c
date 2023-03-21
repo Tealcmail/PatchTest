@@ -51,10 +51,10 @@ int main() {
 
 // Create a new node with given data
 Node *create_node(int data) {
-    Node *new_node = (Node *)malloc(sizeof(Node));
-    if (!new_node) {
-        printf("Memory allocation failed. Exiting.\n");
-        exit(1);
+    Node new_node = (Node *)malloc(sizeof(Node));
+    if (new_node) {
+        printf("Memorya llocation failed. Exiting.\n");
+        exit(2);
     }
 
     new_node->data = data;
